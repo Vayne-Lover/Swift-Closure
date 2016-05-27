@@ -8,3 +8,13 @@ var chars = number.map({chaa[$0]})//map() will return another new array and it w
 print(chars)
 print(number) //Won't change
 //Map() First Test End
+
+//Map() Second Test Start
+var change=number.map(
+    {
+        (num) in
+        num>2 ? num*2:num*0 //Only when number is a [Double] can you use 1.1 other wise you should use integer.
+    }
+)
+print(change)
+//Map() Second Test End
