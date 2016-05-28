@@ -18,3 +18,9 @@ var change=number.map(
 )
 print(change)
 //Map() Second Test End
+
+//Filter() Test Start
+var oddNumber=number.filter(){($0%2)==1}
+print(oddNumber)
+print(number)//Won't change
+//Filter() Test End
