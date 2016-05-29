@@ -24,3 +24,9 @@ var oddNumber=number.filter(){($0%2)==1}
 print(oddNumber)
 print(number)//Won't change
 //Filter() Test End
+
+//Reduce() Test Start
+var total = number.reduce(0,combine: {max($0,$1)})
+print("The max number in array is:\(total)")
+print(number)//Won't change
+//Reduce() Test End
