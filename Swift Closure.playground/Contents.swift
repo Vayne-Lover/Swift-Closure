@@ -30,3 +30,11 @@ var total = number.reduce(0,combine: {max($0,$1)})
 print("The max number in array is:\(total)")
 print(number)//Won't change
 //Reduce() Test End
+
+//Closure
+//Step one
+let numbers1:[Int]=[2,8,6,9,7,4]
+func SortNumbers1(num1:Int,num2:Int) -> Bool {
+    return num1>num2}
+let sortedNumbers1=numbers1.sort(SortNumbers1)
+print(sortedNumbers1)
