@@ -38,3 +38,11 @@ func SortNumbers1(num1:Int,num2:Int) -> Bool {
     return num1>num2}
 let sortedNumbers1=numbers1.sort(SortNumbers1)
 print(sortedNumbers1)
+
+//Step two
+let numbers2:[Int]=[5,6,1,11,2,4]
+var SortNumbers2:(Int,Int)->Bool={
+    (num1:Int,num2:Int) -> Bool in
+    return num1>num2}
+let sortNumbers2 = numbers2.sort(SortNumbers2)
+print(sortNumbers2)
