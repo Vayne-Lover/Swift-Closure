@@ -46,3 +46,11 @@ var SortNumbers2:(Int,Int)->Bool={
     return num1>num2}
 let sortNumbers2 = numbers2.sort(SortNumbers2)
 print(sortNumbers2)
+
+//Step three //Type inferred
+let numbers3:[Int]=[2,1,5,9,13,4]
+var SortNumber3:(Int,Int)->Bool = {
+    (num1,num2) in
+    return num1>num2}
+let sortNumbers3 = numbers3.sort(SortNumber3)
+print(sortNumbers3)
