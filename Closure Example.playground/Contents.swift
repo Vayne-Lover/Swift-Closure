@@ -19,4 +19,18 @@ let example:[Int] = [1,5,6,3,8]
 print(example.sort(ShowClosure0()))
 print(example.sort(ShowClosure1()))
 print(example.sort(ShowClosure2()))
+print(example.sort(
+    {
+        (a:Int,b:Int)->Bool in
+        return a<b
+    }
+    )
+)
+print(example.sort(
+    {(a,b) in a<b}//Delete return
+    )
+)
+print(example.sort({$0<$1}))
+print(example.sort(){$0<$1})
+print(example.sort(<))
 
